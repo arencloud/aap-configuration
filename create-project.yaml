@@ -1,0 +1,13 @@
+kind: AnsibleProject
+apiVersion: tower.ansible.com/v1alpha1
+metadata:
+  name: martian
+spec:
+  connection_secret: aap-access
+  name: martian
+  organization: ACME
+  description: martian Project
+  scm_type: git
+  repo: https://git-gitea.apps.lab.arencloud.com/developer/ecosystem-setup.git
+  branch: main
+  runner_pull_policy: IfNotPresent

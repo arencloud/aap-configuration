@@ -1,0 +1,19 @@
+apiVersion: k8s.keycloak.org/v2alpha1
+kind: Keycloak
+metadata:
+  name: keycloak-cluster
+spec:
+  instances: 1
+  db:
+    vendor: postgres
+    host: postgres-db
+    usernameSecret:
+      name: pgsql-secret
+      key: user
+    passwordSecret:
+      name: pgsql-secret
+      key: password
+  http:
+    tlsSecret: keycloakssl
+  hostname:
+    hostname: keycloak.apps.lab.arencloud.com
