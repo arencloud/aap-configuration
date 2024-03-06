@@ -6,3 +6,4 @@ bases:
 
 resources:
   - keycloak.yaml
+  - keycloak-realm.yaml
