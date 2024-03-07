@@ -3,6 +3,9 @@ kind: Keycloak
 metadata:
   name: keycloak-cluster
 spec:
+  additionalOptions:
+    - name: http-relative-path
+      value: /auth
   instances: 1
   db:
     vendor: postgres
