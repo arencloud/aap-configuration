@@ -118,3 +118,5 @@ spec:
       description: "An administrator role for automation hub"
     - name: "hubuser"
       description: "An user role for automation hub"
+    - name: "hub_content_admin"
+      description: "demo"
